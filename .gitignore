@@ -1,0 +1,9 @@
+# 编译产物 / 调试文件
+*.exe
+*.ilk
+*.obj
+*.pdb
+*.idb
+
+# VSCode 本地配置（含本机编译器绝对路径）
+.vscode/

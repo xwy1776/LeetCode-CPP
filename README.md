@@ -14,6 +14,9 @@
 | 6 | [303](https://leetcode.cn/problems/range-sum-query-immutable/) | 区域和检索 - 数组不可变 | 简单 | 前缀和 | 预处理前缀和，区间和 O(1) 求出 |
 | 7 | [438](https://leetcode.cn/problems/find-all-anagrams-in-a-string/) | 找到字符串中所有字母异位词 | 中等 | 滑动窗口 | 固定长度窗口，频次数组比对 p |
 | 8 | [560](https://leetcode.cn/problems/subarray-sum-equals-k/) | 和为 K 的子数组 | 中等 | 前缀和 + 哈希表 | 每轮查历史前缀和 pre-k 的个数 |
+| 9 | [76](https://leetcode.cn/problems/minimum-window-substring/) | 最小覆盖子串 | 困难 | 滑动窗口 | 每步维护窗口覆盖，收缩左边界取最短 |
+
+> 第 76 题给了两版实现：`最小覆盖子串_朴素版.cpp`（每步全量比较 52 个字母，思路直观但慢）与 `最小覆盖子串_差分计数版.cpp`（用频次差值 + `met` 计数器，O(m+n)）。
 
 ## 本地运行 / 测试
 
@@ -43,5 +46,7 @@ LeetCode-CPP/
 ├── 找到字符串中所有字母异位词.cpp # 438
 ├── 区域和检索数组不可变.cpp       # 303
 ├── 和为K的子数组.cpp             # 560
-└── 滑动窗口最大值.cpp            # 239
+├── 滑动窗口最大值.cpp            # 239
+├── 最小覆盖子串_朴素版.cpp        # 76 朴素
+└── 最小覆盖子串_差分计数版.cpp    # 76 O(m+n)
 ```

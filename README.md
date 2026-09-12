@@ -15,6 +15,7 @@
 | 7 | [438](https://leetcode.cn/problems/find-all-anagrams-in-a-string/) | 找到字符串中所有字母异位词 | 中等 | 滑动窗口 | 固定长度窗口，频次数组比对 p |
 | 8 | [560](https://leetcode.cn/problems/subarray-sum-equals-k/) | 和为 K 的子数组 | 中等 | 前缀和 + 哈希表 | 每轮查历史前缀和 pre-k 的个数 |
 | 9 | [76](https://leetcode.cn/problems/minimum-window-substring/) | 最小覆盖子串 | 困难 | 滑动窗口 | 每步维护窗口覆盖，收缩左边界取最短 |
+| 10 | [189](https://leetcode.cn/problems/rotate-array/) | 轮转数组 | 中等 | 三次反转 | 整体反转 → 反转前 k 个 → 反转剩余，原地完成 |
 
 > 第 76 题给了两版实现：`最小覆盖子串_朴素版.cpp`（每步全量比较 52 个字母，思路直观但慢）与 `最小覆盖子串_差分计数版.cpp`（用频次差值 + `met` 计数器，O(m+n)）。
 
@@ -48,5 +49,6 @@ LeetCode-CPP/
 ├── 和为K的子数组.cpp             # 560
 ├── 滑动窗口最大值.cpp            # 239
 ├── 最小覆盖子串_朴素版.cpp        # 76 朴素
-└── 最小覆盖子串_差分计数版.cpp    # 76 O(m+n)
+├── 最小覆盖子串_差分计数版.cpp    # 76 O(m+n)
+└── 轮转数组.cpp                  # 189
 ```
